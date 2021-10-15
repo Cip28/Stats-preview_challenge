@@ -66,6 +66,7 @@ body{
 }
 .text h1{
     color:var(--White);
+    font-size:2rem;
 }
 .text h1 span{
     color:var(--soft-violet);
