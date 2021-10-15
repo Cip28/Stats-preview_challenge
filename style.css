@@ -1,0 +1,205 @@
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+:root{    
+    /*  (main background) */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* (card background) */
+    --dark-desaturated-blue : hsl(244, 38%, 16%);
+    /* (accent): */
+    --soft-violet: hsl(277, 64%, 61%);
+
+/* -(main heading, stats) */
+--White: hsl(0, 0%, 100%);
+/* (main paragraph) */
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.75);
+/* (stat headings) */
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background: var(--very-dark-blue);
+}
+
+
+
+.container{
+    background-color:var(--dark-desaturated-blue);
+    height: 100vh;
+     width:80%;
+     margin:3rem auto;
+     display:flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     justify-content: flex-end;
+     border-radius:5px;
+ }
+ 
+ .right{
+     width:100%;
+     height:250px;
+     background-image: url(/images/image-header-mobile\ \(1\).jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom:3rem;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+ }
+
+
+ .left{
+    padding:0;
+    margin:0;
+}
+.text{
+    text-align: center;
+    padding:0rem 12%;
+}
+.text h1{
+    color:var(--White);
+}
+.text h1 span{
+    color:var(--soft-violet);
+
+}
+.text p{
+    color:var(--Slightly-transparent-white);
+    margin-top: 1rem;
+    line-height:1.4;
+}
+.stats{
+    text-align: center;
+    padding:2rem 12%;
+
+}
+.stats h1{color:var(--White);}
+.stats p{color:var(--Slightly-transparent-white);margin-bottom:1rem;margin-top:.3rem;text-transform: uppercase;}
+
+@media only screen and (min-width:768px) {
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top:0;
+        margin-bottom:0;
+        height: 50vh;
+        width:80%;
+       
+    }
+    .right{
+        width:80%;
+        height: 50vh;
+        background-image: url(./images/image-header-desktop\ \(1\).jpg);
+        margin:0;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0px;
+    }
+
+    .container .left{
+        width: 100%;
+        height: 50vh;
+        padding-top: 3rem;
+        padding-left:5%;
+        padding-right:5%;
+        /* background-image: url(./images/image-header-desktop\ \(1\).jpg); */
+        background-position: center;
+        background-size: cover;
+    }
+    .stats{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center  ;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+/* .container{
+    border-radius: 5px;
+    background-color: var(--dark-desaturated-blue);
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    text-align: center;
+    margin:5rem 1.8rem;
+}
+.img{
+    background-image: url(./images/image-header-mobile\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom:2rem;
+} */
+
+
+/* 
+.text h1,.heading h1{
+    color:var(--White);
+}
+.text h1{
+    padding:1rem 6%;
+}
+.text h1 span{
+    color:var(--soft-violet);
+}
+.text p{
+    color:var(--Slightly-transparent-white);
+    padding:1rem 6%;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.below{
+   margin-top:2rem;
+}
+.heading h1{
+    font-size:1.5rem;
+}
+.heading p{
+    text-transform: uppercase;
+    color:var(--Slightly-transparent-white);
+    padding-top:.5rem;
+    padding-bottom:1.3rem;
+    font-size:15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+@media only screen and (min-width:768px) {
+    .card{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .img{
+        background-image: url(./images/image-header-desktop\ \(1\).jpg);
+        background-size: 30rem;
+        background-position: right;
+    }
+
+} */
